@@ -1,0 +1,21 @@
+
+Log Entrada: 14:43:14 terça-feira, 29 de outubro de 2019
+Mensagem: A cadeia de caracteres de entrada não estava em um formato correto. | StackTrace   em System.Number.ParseDouble(String value, NumberStyles options, NumberFormatInfo numfmt)
+   em System.Convert.ToDouble(String value)
+   em SimpleLog.Controllers.CalculoController.Calcula(String numero1, String numero2) na C:\Users\100752\source\repos\SimpleLogApplication\SimpleLogApplication\Controllers\CalculoController.cs:linha 22
+
+------------------------------------------
+
+Log Entrada: 14:45:07 terça-feira, 29 de outubro de 2019
+Mensagem: A cadeia de caracteres de entrada não estava em um formato correto. | StackTrace   em System.Number.ParseDouble(String value, NumberStyles options, NumberFormatInfo numfmt)
+   em System.Convert.ToDouble(String value)
+   em SimpleLog.Controllers.CalculoController.Calcula(String numero1, String numero2) na C:\Users\100752\source\repos\SimpleLogApplication\SimpleLogApplication\Controllers\CalculoController.cs:linha 22
+
+------------------------------------------
+
+Log Entrada: 14:45:32 terça-feira, 29 de outubro de 2019
+Mensagem: A cadeia de caracteres de entrada não estava em um formato correto. | StackTrace   em System.Number.ParseDouble(String value, NumberStyles options, NumberFormatInfo numfmt)
+   em System.Convert.ToDouble(String value)
+   em SimpleLog.Controllers.CalculoController.Calcula(String numero1, String numero2) na C:\Users\100752\source\repos\SimpleLogApplication\SimpleLogApplication\Controllers\CalculoController.cs:linha 22
+
+------------------------------------------

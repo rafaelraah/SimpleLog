@@ -1,0 +1,65 @@
+﻿@{
+    ViewBag.Title = "Calcula";
+}
+
+
+<div class="row">
+    <div class="col-md-4">
+        <h2>Calcular</h2>
+        <p>
+            @Html.Label("Número 1: ")
+            @Html.TextBox("txtNumero1")
+        </p>
+        <p>
+            @Html.Label("Número 2: ")
+            @Html.TextBox("txtNumero2")
+        </p>
+        <p>
+            <button id="btnCalcular" class="btn btn-success">Calcular</button>
+        </p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-md-4">
+        <h3>Resultados</h3>
+        <p>Soma: <span id="somaResultado">-</span></p>
+        <p>Subtração: <span id="subtracaoResultado">-</span></p>
+        <p>Multiplicação: <span id="multiplicacaoResultado">-</span></p>
+        <p>Divisão: <span id="divisaoResultado">-</span></p>
+    </div>
+</div>
+
+@section scripts{
+    
+<script>
+
+    $("#btnCalcular").on("click", fnCalcular);
+
+    function fnCalcular() {
+        var numero1 = $('#txtNumero1').val();
+        var numero2 = $('#txtNumero2').val();
+      //  alert();
+        $.ajax({
+            type: 'POST',
+            url: '@Url.Action("Calcula", "Calculo")',
+            dataType: 'json',
+            data: { numero1, numero2},
+            success: function (data) {
+                $('#somaResultado').text(data.soma);
+                $('#subtracaoResultado').text(data.subtracao);
+                $('#multiplicacaoResultado').text(data.multiplicacao);
+                $('#divisaoResultado').text(data.divisao);
+            },
+            error: function (err) {
+                $('#somaResultado').text("-");
+                $('#subtracaoResultado').text("-");
+                $('#multiplicacaoResultado').text("-");
+                $('#divisaoResultado').text("-");
+            }
+        });
+    }
+
+</script>    
+    
+}
