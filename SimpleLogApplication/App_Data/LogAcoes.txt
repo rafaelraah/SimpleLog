@@ -1,0 +1,15 @@
+
+Log Entrada: 14:45:42 terça-feira, 29 de outubro de 2019
+Mensagem: Cálculo executado com sucesso para os números 1 e 2
+
+------------------------------------------
+
+Log Entrada: 14:46:05 terça-feira, 29 de outubro de 2019
+Mensagem: Cálculo executado com sucesso para os números 1 e 2
+
+------------------------------------------
+
+Log Entrada: 14:46:38 terça-feira, 29 de outubro de 2019
+Mensagem: Cálculo executado com sucesso para os números 5 e 4
+
+------------------------------------------
